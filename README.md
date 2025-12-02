@@ -23,11 +23,12 @@
 명령어: git <명령어>
 깃 사용자 정보 등록
  전역 리포지토리
-  git config --global user.name "Your Name"
-  git config --global user.email "you@example.com"
+- git config --global user.name "Your Name"
+- git config --global user.email "you@example.com"
+  
  현재 리포지토리만
-  git config user.name "Your Name"
-  git config user.email "you@example.com"
+- git config user.name "Your Name"
+- git config user.email "you@example.com"
  
 - git init: 특정 폴더에서 폴더 하위에 있는 것들을 버전관리하기 위한 초기화 명령어 (버전관리하겠다) 
   - 이제 부터 이 폴더의 버전을 관리할 수 있다. 
@@ -79,7 +80,9 @@ diff명령어
 - git diff <비교대상 branch이름> origin/<branch이름> : 원격 저장소와 로컬 저장소간의 비교 
 - git diff HEAD HEAD^ : 현재 커밋과 그전 커밋과의 비교. 
 - git diff HEAD: 현재 작업중인 수정된 내용과 이전 커밋한 내용과 비교 
-- git diff <비교대상 branch이름> <기준 branch이름> 
+- git diff <비교대상 branch이름> <기준 branch이름>
+- 예시:
+- git fetch  ->  git branch --all -> git log master..origin/master -> git diff master origin/master
 
 revert명령어 
 - git revert <되돌리고 싶은 commit>
