@@ -69,6 +69,7 @@ Branch
 - git branch: 현재 branch 목록 보기 
 - git branch <브랜치이름> : 새 브랜치 만들기 
 - git checkout <브랜치이름> : 특정 브랜치로 체크아웃. 
+- git checkout -b feature1 origin/feature1 : 로컬에 feature1브랜치 생성 + origin/feature1기반으로 체크아웃 
 
 어떤 브랜치를 어디로 합칠지도 정해야한다. -> 병합의 결과가 되는 브랜치로 체크아웃한다. 
 -> 합치는 명령어를 쳐준다. 
