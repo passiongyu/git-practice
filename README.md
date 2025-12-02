@@ -170,12 +170,13 @@ rebase: 합치고자 하는 branch의 최신 commit으로 base를 옮긴다. -> 
 - git branch --set-upstream-to=origin/원격브랜치명 로컬브랜치명: 로컬 브랜치에서 이미 존재하는 원격브랜치 추적
 
 내가 기능 브랜치를 따서 잘 개발하다가 누가 중요한 소스를 main에다 커밋해서 받아야하는 상황
-# main 브랜치 최신 가져오기
+
+main 브랜치 최신 가져오기
 - git checkout main
 - git pull origin main
 
-# 내 기능 브랜치로 돌아오기
+내 기능 브랜치로 돌아오기
 - git checkout feature-branch
 
-# main 브랜치 내용을 내 브랜치에 병합
+main 브랜치 내용을 내 브랜치에 병합
 - git merge main
